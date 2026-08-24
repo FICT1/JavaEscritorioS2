@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="451.0" prefWidth="462.0" spacing="20.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ni.edu.uam.sesion4.GradeController">
+
+    <Label text="Registro de Notas">
+      <padding>
+         <Insets bottom="5.0" top="5.0" />
+      </padding>
+      <font>
+         <Font size="18.0" />
+      </font></Label>
+   <Label text="Nombre Completo:" />
+   <TextField fx:id="txtName" />
+   <Label layoutX="108.0" layoutY="180.0" text="Carrera:" />
+   <TextField fx:id="txtCareer" layoutX="20.0" layoutY="199.0" />
+   <Label layoutX="112.0" layoutY="222.0" text="Nota:" />
+   <TextField fx:id="txtGrade" layoutX="20.0" layoutY="240.0" />
+   <Label fx:id="lblCountReg" layoutX="132.0" layoutY="312.0" text="Registros Guardados: 0" />
+   <Button fx:id="btnSave" mnemonicParsing="false" onAction="#saveButtonAction" prefHeight="43.0" prefWidth="100.0" text="Guardar" />
+   <padding>
+      <Insets bottom="15.0" left="10.0" right="15.0" top="15.0" />
+   </padding>
+
+</VBox>
