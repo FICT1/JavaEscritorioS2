@@ -6,6 +6,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.nio.channels.Selector;
 import java.time.LocalDate;
 
 
@@ -20,4 +21,5 @@ public class Estudiante {
     private String carrera;
     private LocalDate fechaNacimiento;
     private Boolean tienebeca;
+    private Boolean sexo;
 }

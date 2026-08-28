@@ -9,25 +9,44 @@
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="445.0" prefWidth="377.0" spacing="5.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ni.edu.uam.registro_app.controller.EstudianteController">
+<VBox alignment="BOTTOM_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="445.0" prefWidth="398.0" spacing="5.0" style="-fx-background-color: #0092;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ni.edu.uam.registro_app.controller.EstudianteController">
    <children>
-      <Label text="Nombres" />
+      <Label alignment="CENTER" contentDisplay="CENTER" text="Nombres">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
       <TextField fx:id="txtNombres" promptText="Juan Alexander" />
-      <Label layoutX="10.0" layoutY="10.0" text="Apellidos" />
+      <Label layoutX="10.0" layoutY="10.0" text="Apellidos">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
       <TextField fx:id="txtApellidos" layoutX="10.0" layoutY="28.0" promptText="López Herrera" />
-      <Label layoutX="20.0" layoutY="179.0" text="Sexo" />
-      <ComboBox fx:id="cbSexo" onAction="#mostrarenCombobox" prefWidth="150.0" />
-      <Label layoutX="10.0" layoutY="53.0" text="Carrera" />
-      <TextField fx:id="txtCarrera" layoutX="10.0" layoutY="71.0" />
-      <Label layoutX="10.0" layoutY="96.0" text="Fecha Nacimiento" />
+      <Label layoutX="20.0" layoutY="179.0" text="Sexo">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <ComboBox fx:id="cbSexo" prefWidth="150.0" />
+      <Label layoutX="10.0" layoutY="53.0" text="Carrera">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <TextField fx:id="txtCarrera" layoutX="10.0" layoutY="71.0" prefHeight="26.0" prefWidth="233.0" />
+      <Label layoutX="10.0" layoutY="96.0" text="Fecha Nacimiento">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
       <DatePicker fx:id="dpFechaNac" promptText="Seleccione la fecha de Nacimiento" />
-      <CheckBox fx:id="chkTieneBeca" mnemonicParsing="false" text="Tiene Beca" />
-      <Button fx:id="btnAgregar" mnemonicParsing="false" onAction="#guardarOnClick" text="Agregar" />
+      <CheckBox fx:id="chkTieneBeca" mnemonicParsing="false" text="Tiene Beca" underline="true" />
+      <Button fx:id="btnAgregar" mnemonicParsing="false" onAction="#guardarOnClick" prefHeight="19.0" prefWidth="111.0" text="Agregar" />
       <Label fx:id="lblRegistros" layoutX="10.0" layoutY="140.0" text="Registros guardados: 0" />
-      <ListView fx:id="lvRegistro" prefHeight="92.0" prefWidth="327.0" />
+      <ListView fx:id="lvRegistro" prefHeight="93.0" prefWidth="357.0" />
    </children>
    <padding>
       <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
    </padding>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
 </VBox>
