@@ -29,9 +29,7 @@
 
     <TextField fx:id="txtUsuario" prefHeight="35.0" promptText="Usuario" />
     <PasswordField fx:id="txtPassword" prefHeight="35.0" promptText="Contraseña" />
-
     <Button onAction="#ingresarOnClick" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: #2b5555; -fx-text-fill: white; -fx-font-weight: bold;" text="Ingresar" />
-
     <Label fx:id="lblMensaje" textFill="RED" />
    <effect>
       <DropShadow />
