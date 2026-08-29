@@ -1,15 +1,11 @@
 package ni.edu.uam.registro_app.modelos;
 
-import javafx.fxml.FXML;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.nio.channels.Selector;
 import java.time.LocalDate;
-
-
 
 @Getter
 @Setter
@@ -21,5 +17,6 @@ public class Estudiante {
     private String carrera;
     private LocalDate fechaNacimiento;
     private Boolean tienebeca;
+    private String facultad;
     private Boolean sexo;
 }
