@@ -27,7 +27,6 @@
          </image>
       </ImageView>
 
-      <!-- Formulario -->
       <Label layoutX="28.0" layoutY="70.0" text="Nombres" textFill="WHITE" />
       <TextField fx:id="txtNombres" layoutX="28.0" layoutY="90.0" prefWidth="170.0" promptText="Juan Alexander" />
 
@@ -53,7 +52,6 @@
 
       <Label fx:id="lblRegistros" layoutX="456.0" layoutY="259.0" text="Registros guardados: 0" textFill="WHITE" />
 
-      <!-- TableView -->
       <TableView fx:id="tvEstudiantes" layoutX="25.0" layoutY="300.0" prefHeight="220.0" prefWidth="600.0">
          <columns>
             <TableColumn fx:id="colNombres" prefWidth="100.0" text="Nombres" />
