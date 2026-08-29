@@ -22,5 +22,4 @@ public class EstudianteDao implements Crud<Estudiante> {
     public List<Estudiante> obtenerRegistros() {
         return estudiantes;
     }
-
 }

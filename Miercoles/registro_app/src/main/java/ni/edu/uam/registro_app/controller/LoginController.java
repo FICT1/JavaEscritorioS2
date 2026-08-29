@@ -17,7 +17,6 @@ public class LoginController {
     @FXML private TextField txtUsuario;
     @FXML private PasswordField txtPassword;
     @FXML private Label lblMensaje;
-
     @FXML
     private void ingresarOnClick(ActionEvent event) {
         String usuario = txtUsuario.getText().trim();
